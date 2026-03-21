@@ -14,7 +14,7 @@ interface Props {
     meetingId: string,
 }
 
-export const MeetingIdView = async ({ meetingId }: Props) => {
+export const MeetingIdView = ({ meetingId }: Props) => {
   const trpc = useTRPC();
   const queryClient = useQueryClient();
   const router = useRouter()
